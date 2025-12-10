@@ -21,7 +21,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 .logo {
@@ -29,7 +29,6 @@ html {
   height: 40px;
   display: flex;
   align-items: center;
-  margin-right: 50px;
 }
 
 .nav__link {
@@ -54,9 +53,12 @@ html {
   margin-right: 20px;
 }
 
+.nav__item:last-child {
+  margin-right: 0;
+}
+
 .nav__link:hover {
-  color: var(--color-black);
-  border-bottom: 1px solid blue;
+  color: var(--color-blue);
 }
 
 .nav__link.is-active {
@@ -64,10 +66,10 @@ html {
   position: relative;
 }
 
-.nav__link.nav__link.is-active::after {
+.nav__link.is-active::after {
   content: '';
   position: absolute;
-  bottom: 2px;
+  bottom: 0;
   left: 0;
   height: 4px;
   border-radius: 8px;
